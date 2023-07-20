@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
+import { singleColumnMaxWidth } from '@/app/config/config'
+
 const StyledMain = styled.main`
     width: 50%;
-    overflow-y: scroll;
-    height: 100vh;
+
+    @media ${singleColumnMaxWidth} {
+        width: 100%;
+    }
+
 `
 
 export default function Main({ children }) {

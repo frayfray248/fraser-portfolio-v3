@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
         background-color: var(--dark-navy);
         color: var(--white);
         font-family: var(--font-calibre);
+        display: block;
     }
 
 `

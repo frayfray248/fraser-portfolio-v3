@@ -3,10 +3,11 @@
 import React from "react"
 import GlobalStyles from "./styles/GlobalStyles"
 
+// components
 import Container from "./components/layout/Container"
 import Header from "./components/layout/Header"
-import Section from "./components/layout/Section"
 import Main from "./components/layout/Main"
+import About from "./components/sections/About"
 
 export default function Home() {
     return (
@@ -15,15 +16,7 @@ export default function Home() {
             <Container>
                 <Header />
                 <Main>
-                    <Section />
-                    <Section />
-                    <Section />
-                    <Section />
-                    <Section />
-                    <Section />
-                    <Section />
-                    <Section />
-                    <Section />
+                    <About />
                 </Main>
 
             </Container>
