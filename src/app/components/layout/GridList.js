@@ -10,7 +10,7 @@ const StyledUl = styled.ul`
 
 const StyledLi = styled.li`
     font-size: 1.4rem;
-    color: ${props => props.theme.colors.defaultText};
+    color: ${props => props.theme.colors.link};
 
     &::before {
         content: "▹";

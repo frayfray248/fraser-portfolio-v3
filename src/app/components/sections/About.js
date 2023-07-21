@@ -25,21 +25,28 @@ const About = () => {
     return (
         <Section title="About">
             <p>
-            Hello! My name is Fraser, and I enjoy 
-            making apps for the internet. My interest 
-            in programming started when I explored map 
-            editors for my favorite real-time strategy 
-            games. I fed this interest when I pursued 
-            a computer science diploma at <a href="https://camosun.ca/">Camosun 
-            College</a> in 2018.</p> <p>I discovered My love for 
-            codding when I took my first algorithms course. 
-            My passion for web development was fully formed 
-            when I created a REST Node JS Express API for my 
-            WordPress Capstone project. My mission to become a 
-            full stack developer began.
+                My interest in programming started when I experimented with map 
+                editors for my favorite real-time strategy games. 
+                I fed this interest when I pursued a computer science 
+                diploma at <a href="https://camosun.ca/">Camosun College</a> in 2018.
+            </p>
+            <p>
+                My love for codding grew when I took my first algorithms 
+                course. My passion for web development was fully formed when 
+                I delivered an API for my <a href="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php">WordPress Capstone project</a>. 
+                My mission to become a full stack developer began.
+            </p>
+            <p>
+                Since then, I have made several <a href="#">personal web app projects </a> and have been a <a href="#">lab technologist</a>, a <a href="#">tutor</a>, an <a href="#">instructor</a>, 
+                and a <a href="#">project sponsor</a>.
+            </p>
+            <p>
+                During my downtime, I run D&D campaigns, build Factorio bases, 
+                3D print miniatures, practice golf swings at the local driving 
+                range, and go on hiking adventures with my cat.
             </p>
             <p>Here are some technologies I've used:</p>
-            <GridList items={technologies}/>
+            <GridList items={technologies} />
         </Section>
     )
 }
