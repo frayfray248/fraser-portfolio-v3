@@ -15,10 +15,26 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         width: 100%;
         min-height: 100%;
-        background-color: var(--dark-navy);
-        color: var(--white);
+        background-color: ${props => props.theme.colors.mainBackground};
+        color: ${props => props.theme.colors.defaultText};
         font-family: var(--font-calibre);
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.5;
         display: block;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: ${props => props.theme.colors.headers};
+    }
+
+    a {
+        color: ${props => props.theme.colors.link};
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: ${props => props.theme.colors.link};
     }
 
 `

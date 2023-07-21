@@ -4,13 +4,14 @@ import { singleColumnMaxWidth } from '@/app/config/config'
 
 const StyledHeader = styled.div`
     width: 50%;
-    position: -webkit-sticky; /* for Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
-    align-self: flex-start; /* <-- this is the fix */
+    align-self: flex-start;
+    padding: 2rem;
 
     @media ${singleColumnMaxWidth} {
-        width: 100%;
+        width: unset;
         position: relative;
     }
 
@@ -24,6 +25,7 @@ const Header = () => {
     return (
         <StyledHeader>
             <StyledHeaderTitle>Fraser Macallum</StyledHeaderTitle>
+            <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
         </StyledHeader>
     )
 }

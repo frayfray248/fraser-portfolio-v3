@@ -4,7 +4,7 @@ import { singleColumnMaxWidth } from '@/app/config/config'
 
 const StyledContainer = styled.div`
     display: flex;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 
     @media ${singleColumnMaxWidth} {

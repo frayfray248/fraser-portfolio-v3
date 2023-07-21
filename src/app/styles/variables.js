@@ -4,10 +4,10 @@ const variables = css`
 
     :root {
         --dark-navy: #020c1b;
-        --white: #e6f1ff;
+        --gray: #828499;
+        --white: #e8f2fd;
 
-        --font-calibre: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
-        sans-serif;
+        --font-calibre: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     }
 
 `
