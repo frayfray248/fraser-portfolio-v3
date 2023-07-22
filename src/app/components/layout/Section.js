@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledSection = styled.section`
-    padding: 2rem;
+    margin-bottom: 10rem;
 `
 
 const Section = ({ title, children }) => {

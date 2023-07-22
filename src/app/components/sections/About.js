@@ -28,17 +28,17 @@ const About = () => {
                 My interest in programming started when I experimented with map 
                 editors for my favorite real-time strategy games. 
                 I fed this interest when I pursued a computer science 
-                diploma at <a href="https://camosun.ca/">Camosun College</a> in 2018.
+                diploma at <a href="https://camosun.ca/" target="_blank">Camosun College</a> in 2018.
             </p>
             <p>
                 My love for codding grew when I took my first algorithms 
                 course. My passion for web development was fully formed when 
-                I delivered an API for my <a href="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php">WordPress Capstone project</a>. 
+                I delivered an API for my <a href="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php" target="_blank">WordPress Capstone project</a>. 
                 My mission to become a full stack developer began.
             </p>
             <p>
-                Since then, I have made several <a href="#">personal web app projects </a> and have been a <a href="#">lab technologist</a>, a <a href="#">tutor</a>, an <a href="#">instructor</a>, 
-                and a <a href="#">project sponsor</a>.
+                Since then, I have made several <a href="#" target="_blank">personal web app projects </a> and have been a <a href="#" target="_blank">lab technologist</a>, a <a href="#" target="_blank">tutor</a>, an <a href="#" target="_blank">instructor</a>, 
+                and a <a href="#" target="_blank">project sponsor</a>.
             </p>
             <p>
                 During my downtime, I run D&D campaigns, build Factorio bases, 

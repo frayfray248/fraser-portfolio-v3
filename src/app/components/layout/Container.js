@@ -6,6 +6,8 @@ const StyledContainer = styled.div`
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
+    gap: 2rem;
 
     @media ${singleColumnMaxWidth} {
         flex-direction: column;
