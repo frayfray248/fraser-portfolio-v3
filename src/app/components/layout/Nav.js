@@ -1,11 +1,20 @@
 import styled from 'styled-components'
 
+// config
+import { singleColumnMaxWidth } from '@/app/config/config'
+
 const StyledNavList = styled.ul`
+    margin-top: 4rem;
     list-style-type: none;
+    padding: 0;
+
+    @media ${singleColumnMaxWidth} {
+        display: none;
+    }
 `
 
 const StyledNavItem = styled.li`
-    padding: 10px;
+    margin-top: 20px;
 `
 
 const StyledNavLink = styled(({ href, children, className }) => <a className={className} href={href}>{children}</a>)`
@@ -50,9 +59,6 @@ const StyledNavLink = styled(({ href, children, className }) => <a className={cl
         }
     }
     `}
-  
-    
-
 `
 
 
@@ -67,9 +73,9 @@ const Nav = ({ activeSection }) => {
 
 
         <StyledNavList>
-            <StyledNavItem><StyledNavLink activelink={aboutActive} href='#about'>About</StyledNavLink></StyledNavItem>
-            <StyledNavItem><StyledNavLink activelink={projectsActive} href='#projects'>Projects</StyledNavLink></StyledNavItem>
-            <StyledNavItem><StyledNavLink activelink={experienceActive} href='#experience'>Experience</StyledNavLink></StyledNavItem>
+            <StyledNavItem><StyledNavLink activelink={aboutActive} href='#about'>&lt;About /&gt;</StyledNavLink></StyledNavItem>
+            <StyledNavItem><StyledNavLink activelink={projectsActive} href='#projects'>&lt;Projects /&gt;</StyledNavLink></StyledNavItem>
+            <StyledNavItem><StyledNavLink activelink={experienceActive} href='#experience'>&lt;Experience /&gt;</StyledNavLink></StyledNavItem>
         </StyledNavList>
     )
 }

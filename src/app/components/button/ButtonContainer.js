@@ -7,9 +7,9 @@ const StyledButtonContainer = styled.div`
     gap: 1rem;
 `
 
-const ButtonContainer = ({ children }) => {
+const ButtonContainer = ({ children, className }) => {
     return (
-        <StyledButtonContainer>
+        <StyledButtonContainer className={className}>
             {children}
         </StyledButtonContainer>
     )

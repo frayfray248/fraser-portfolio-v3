@@ -20,7 +20,11 @@ import { mainTheme, secTheme, tertTheme } from '@/app/styles/themes'
 
 
 const StyledHeader = styled.div`
+    height: 90vh;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -30,6 +34,7 @@ const StyledHeader = styled.div`
 
     @media ${singleColumnMaxWidth} {
         width: unset;
+        height: unset;
         position: relative;
     }
 
@@ -46,19 +51,22 @@ const StyledHeaderTitle = styled.h1`
 const Header = ({ themeButtonHandler, activeSection }) => {
     return (
         <StyledHeader>
-            <ButtonContainer>
-                <Button handler={() => themeButtonHandler(mainTheme)} text="Theme 1" />
-                <Button handler={() => themeButtonHandler(secTheme)} text="Theme 2" />
-                <Button handler={() => themeButtonHandler(tertTheme)} text="Theme 3" />
-            </ButtonContainer>
+            <div>
+                <ButtonContainer>
+                    <Button handler={() => themeButtonHandler(mainTheme)} text="Theme 1" />
+                    <Button handler={() => themeButtonHandler(secTheme)} text="Theme 2" />
+                    <Button handler={() => themeButtonHandler(tertTheme)} text="Theme 3" />
+                </ButtonContainer>
 
-            
-            <StyledHeaderTitle>FRASER MACALLUM</StyledHeaderTitle>
-            <Brand />
-            <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
-            <Nav activeSection={activeSection}/>
+
+                <StyledHeaderTitle>FRASER MACALLUM</StyledHeaderTitle>
+                <Brand />
+                <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
+                <Nav activeSection={activeSection} />
+            </div>
+
             <SocialMediaLinks />
-            
+
         </StyledHeader>
     )
 }
