@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
+import Brand from '../Brand'
 import ButtonContainer from '../button/ButtonContainer'
 import Button from '../button/Button'
+import Nav from '../layout/Nav'
 
 import { singleColumnMaxWidth } from '@/app/config/config'
 
@@ -27,7 +29,7 @@ const StyledHeaderTitle = styled.h1`
     font-size: 3rem;
 `
 
-const Header = ({ themeButtonHandler }) => {
+const Header = ({ themeButtonHandler, activeSection }) => {
     return (
         <StyledHeader>
             <ButtonContainer>
@@ -36,8 +38,11 @@ const Header = ({ themeButtonHandler }) => {
                 <Button handler={() => themeButtonHandler(tertTheme)} text="Theme 3" />
             </ButtonContainer>
 
+            
             <StyledHeaderTitle>Fraser Macallum</StyledHeaderTitle>
+            <Brand />
             <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
+            <Nav activeSection={activeSection}/>
         </StyledHeader>
     )
 }

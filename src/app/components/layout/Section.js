@@ -4,9 +4,9 @@ const StyledSection = styled.section`
     margin-bottom: 10rem;
 `
 
-const Section = ({ title, children }) => {
+const Section = ({ title, sectionId, children }) => {
     return (
-        <StyledSection>
+        <StyledSection id={sectionId}>
             <h1>{title}</h1>
             {children}
         </StyledSection>

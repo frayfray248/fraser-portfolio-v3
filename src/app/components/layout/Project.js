@@ -32,7 +32,7 @@ const StyledProjectInfo = styled.div`
     justify-content: start;
     flex: 1;
     margin-left: 1rem;
-
+    color: ${props => props.theme.colors.defaultText};
 
     h3 {
         font-size: 1.5rem;

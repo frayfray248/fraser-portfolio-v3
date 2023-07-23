@@ -51,9 +51,7 @@ const GlobalStyles = createGlobalStyle`
         transition: color 0.2s ease-in-out;
     }
 
-    a:visited {
-        color: ${props => props.theme.colors.link};
-    }
+
 
     a:hover {
         color: ${props => props.theme.colors.highlight};

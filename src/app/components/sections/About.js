@@ -1,7 +1,7 @@
 import Section from "../layout/Section"
 import GridList from "../layout/GridList"
 
-const About = () => {
+const About = ({ innerRef}) => {
 
     const technologies = [
         "ES6 JavaScript",
@@ -23,7 +23,7 @@ const About = () => {
     ]
 
     return (
-        <Section title="About">
+        <Section title="About" sectionId='about' ref={innerRef}>
             <p>
                 My interest in programming started when I experimented with map 
                 editors for my favorite real-time strategy games. 

@@ -1,6 +1,6 @@
 'use client'
 
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
 import GlobalStyles from "./styles/GlobalStyles"
 import { ThemeProvider } from "styled-components"
 
@@ -16,24 +16,58 @@ import Projects from "./components/sections/Projects"
 
 export default function Home() {
 
+    // state
+    const [theme, setTheme] = useState(mainTheme)
+    const [activeSection, setActiveSection] = useState('about')
 
-    const [theme, setTheme] = React.useState(mainTheme)
+    // refs
+    const aboutRef = useRef(null)
+    const projectsRef = useRef(null)
 
-    const themeChangeHandler = (theme) => {
+    // handlers
+    const themeChangeHandler = theme => setTheme(theme)
 
-        setTheme(theme)
+    // effects
+    useEffect(() => {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        }
 
-    }
+        const callback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.dataset.section)
+                }
+            })
+        }
+
+        const observer = new IntersectionObserver(callback, options)
+
+        if (aboutRef.current && projectsRef.current) {
+            observer.observe(aboutRef.current)
+            observer.observe(projectsRef.current)
+        }
+
+        return () => {
+            if (aboutRef.current && projectsRef.current) {
+                observer.unobserve(aboutRef.current)
+                observer.unobserve(projectsRef.current)
+            }
+        }
+
+    }, [])
 
     return (
         <React.Fragment>
             <ThemeProvider theme={theme}>
                 <GlobalStyles />
                 <Container>
-                    <Header themeButtonHandler={themeChangeHandler} />
+                    <Header themeButtonHandler={themeChangeHandler} activeSection={activeSection} />
                     <Main>
-                        <About />
-                        <Projects />
+                        <div ref={aboutRef} data-section="about" ><About/></div>
+                        <div ref={projectsRef} data-section="projects"><Projects/></div>
                     </Main>
 
                 </Container>
