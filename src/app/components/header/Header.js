@@ -1,15 +1,23 @@
+// modules
 import styled from 'styled-components'
 
+// device
 import { device } from '@/app/device/device'
 
-import Brand from '../Brand'
+// components
+import Brand from '../icons/Brand'
 import ButtonContainer from '../button/ButtonContainer'
 import Button from '../button/Button'
 import Nav from '../layout/Nav'
+import SocialMediaLinks from '../SocialMediaLinks'
 
+// config
 import { singleColumnMaxWidth } from '@/app/config/config'
 
+// themes
 import { mainTheme, secTheme, tertTheme } from '@/app/styles/themes'
+
+
 
 const StyledHeader = styled.div`
     width: 50%;
@@ -49,6 +57,8 @@ const Header = ({ themeButtonHandler, activeSection }) => {
             <Brand />
             <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
             <Nav activeSection={activeSection}/>
+            <SocialMediaLinks />
+            
         </StyledHeader>
     )
 }
