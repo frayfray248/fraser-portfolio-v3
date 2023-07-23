@@ -13,6 +13,7 @@ import Header from "./components/header/Header"
 import Main from "./components/layout/Main"
 import About from "./components/sections/About"
 import Projects from "./components/sections/Projects"
+import Experience from "./components/sections/Experience"
 
 export default function Home() {
 
@@ -23,6 +24,7 @@ export default function Home() {
     // refs
     const aboutRef = useRef(null)
     const projectsRef = useRef(null)
+    const experienceRef = useRef(null)
 
     // handlers
     const themeChangeHandler = theme => setTheme(theme)
@@ -45,15 +47,17 @@ export default function Home() {
 
         const observer = new IntersectionObserver(callback, options)
 
-        if (aboutRef.current && projectsRef.current) {
+        if (aboutRef.current && projectsRef.current && experienceRef.current) {
             observer.observe(aboutRef.current)
             observer.observe(projectsRef.current)
+            observer.observe(experienceRef.current)
         }
 
         return () => {
-            if (aboutRef.current && projectsRef.current) {
+            if (aboutRef.current && projectsRef.current && experienceRef.current) {
                 observer.unobserve(aboutRef.current)
                 observer.unobserve(projectsRef.current)
+                observer.unobserve(experienceRef.current)
             }
         }
 
@@ -68,6 +72,7 @@ export default function Home() {
                     <Main>
                         <div ref={aboutRef} data-section="about" ><About/></div>
                         <div ref={projectsRef} data-section="projects"><Projects/></div>
+                        <div ref={experienceRef} data-section="experience"><Experience/></div>
                     </Main>
 
                 </Container>

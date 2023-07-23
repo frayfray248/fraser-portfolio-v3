@@ -5,10 +5,10 @@ import Section from "../layout/Section"
 
 
 
-const Projects = ({ innerRef}) => {
+const Projects = () => {
 
     return (
-        <Section title="Projects" sectionId='projects' ref={innerRef}>
+        <Section title="Projects" sectionId='projects'>
             <Project 
             title="Evolution Sim" 
             img='images/evolutionSim.png'

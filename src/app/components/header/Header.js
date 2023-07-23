@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { device } from '@/app/device/device'
+
 import Brand from '../Brand'
 import ButtonContainer from '../button/ButtonContainer'
 import Button from '../button/Button'
@@ -26,7 +28,11 @@ const StyledHeader = styled.div`
 `
 
 const StyledHeaderTitle = styled.h1`
-    font-size: 3rem;
+    font-size: 3.5rem;
+
+    @media ${device.max.tablet} {
+        font-size: 3rem;
+    }
 `
 
 const Header = ({ themeButtonHandler, activeSection }) => {
@@ -39,7 +45,7 @@ const Header = ({ themeButtonHandler, activeSection }) => {
             </ButtonContainer>
 
             
-            <StyledHeaderTitle>Fraser Macallum</StyledHeaderTitle>
+            <StyledHeaderTitle>FRASER MACALLUM</StyledHeaderTitle>
             <Brand />
             <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
             <Nav activeSection={activeSection}/>
