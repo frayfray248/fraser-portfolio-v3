@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { singleColumnMaxWidth } from '@/app/config/config'
+import { singleColumnMaxWidth, singleColumnMaxHeight } from '@/app/config/config'
 
 const StyledContainer = styled.div`
     display: flex;
@@ -10,6 +10,10 @@ const StyledContainer = styled.div`
     gap: 2rem;
 
     @media ${singleColumnMaxWidth} {
+        flex-direction: column;
+    }
+
+    @media ${singleColumnMaxHeight} {
         flex-direction: column;
     }
 `

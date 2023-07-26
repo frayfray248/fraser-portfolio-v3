@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+// config
+import { singleColumnMaxWidth } from '@/app/config/config'
+
 const StyledProjectContainer = styled.div`
     display: flex;
     flex-direction: row;

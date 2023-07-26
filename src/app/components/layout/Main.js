@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
-import { singleColumnMaxWidth } from '@/app/config/config'
+import { singleColumnMaxWidth, singleColumnMaxHeight } from '@/app/config/config'
 
 const StyledMain = styled.main`
     width: 50%;
 
     @media ${singleColumnMaxWidth} {
+        width: 100%;
+    }
+
+    @media ${singleColumnMaxHeight} {
         width: 100%;
     }
 

@@ -10,9 +10,10 @@ import ButtonContainer from '../button/ButtonContainer'
 import Button from '../button/Button'
 import Nav from '../layout/Nav'
 import SocialMediaLinks from '../SocialMediaLinks'
+import ProfilePicture from '../ProfilePicture'
 
 // config
-import { singleColumnMaxWidth } from '@/app/config/config'
+import { singleColumnMaxWidth, singleColumnMaxHeight } from '@/app/config/config'
 
 // themes
 import { mainTheme, secTheme, tertTheme } from '@/app/styles/themes'
@@ -33,6 +34,12 @@ const StyledHeader = styled.div`
     padding-top: 2rem;
 
     @media ${singleColumnMaxWidth} {
+        width: unset;
+        height: unset;
+        position: relative;
+    }
+
+    @media ${singleColumnMaxHeight} {
         width: unset;
         height: unset;
         position: relative;
@@ -60,8 +67,8 @@ const Header = ({ themeButtonHandler, activeSection }) => {
 
 
                 <StyledHeaderTitle>FRASER MACALLUM</StyledHeaderTitle>
-                <Brand />
                 <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
+                <ProfilePicture img='images/labroom.png' radius={10} />
                 <Nav activeSection={activeSection} />
             </div>
 
