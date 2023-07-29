@@ -37,7 +37,9 @@ const About = ({ innerRef}) => {
                 My mission to become a full stack developer began.
             </p>
             <p>
-                Since then, I have made several <a href="#" target="_blank">personal web app projects </a> and have been a <a href="#" target="_blank">lab technologist</a>, a <a href="#" target="_blank">tutor</a>, an <a href="#" target="_blank">instructor</a>, 
+                Since then, I have made several <a href="#projects">personal web app projects </a> on <a href="https://github.com/frayfray248" target="_blank">GitHub</a> and 
+                have been a <a href="#experience">lab technologist</a>, 
+                a <a href="#" target="_blank">tutor</a>, an <a href="#experience">instructor</a>, 
                 and a <a href="#" target="_blank">project sponsor</a>.
             </p>
             <p>
