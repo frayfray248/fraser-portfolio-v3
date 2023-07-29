@@ -4,7 +4,7 @@ import { singleColumnMaxWidth, singleColumnMaxHeight } from '@/app/config/config
 
 const StyledContainer = styled.div`
     display: flex;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
     gap: 2rem;

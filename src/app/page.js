@@ -9,6 +9,7 @@ import { mainTheme } from './styles/themes'
 
 // components
 import Container from "./components/layout/Container"
+import ColumnBorder from "./components/layout/ColumnBorder"
 import Header from "./components/header/Header"
 import Main from "./components/layout/Main"
 import About from "./components/sections/About"
@@ -80,6 +81,7 @@ export default function Home() {
                 <GlobalStyles />
                 <Container>
                     <Header themeButtonHandler={themeChangeHandler} activeSection={activeSection} />
+                    <ColumnBorder />
                     <Main>
                         <div ref={aboutRef} data-section="about" ><About/></div>
                         <div ref={projectsRef} data-section="projects"><Projects/></div>
@@ -87,7 +89,6 @@ export default function Home() {
                         <div ref={contactRef} data-section="contact"><Contact/></div>
                         <Footer/>
                     </Main>
-
                 </Container>
             </ThemeProvider>
         </React.Fragment>
