@@ -15,6 +15,7 @@ import About from "./components/sections/About"
 import Projects from "./components/sections/Projects"
 import Experience from "./components/sections/Experience"
 import Contact from "./components/sections/Contact"
+import Footer from "./components/sections/Footer"
 
 export default function Home() {
 
@@ -84,6 +85,7 @@ export default function Home() {
                         <div ref={projectsRef} data-section="projects"><Projects/></div>
                         <div ref={experienceRef} data-section="experience"><Experience/></div>
                         <div ref={contactRef} data-section="contact"><Contact/></div>
+                        <Footer/>
                     </Main>
 
                 </Container>
