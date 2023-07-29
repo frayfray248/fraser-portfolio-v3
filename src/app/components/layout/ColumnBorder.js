@@ -6,6 +6,7 @@ import { singleColumnMaxWidth, singleColumnMaxHeight } from '@/app/config/config
 const StyledColumnBorder = styled.div`
     background-color: ${props => props.theme.colors.containerBackground};
     width: 15px;
+    margin: 0px 2rem;
     height: 100vh;
     position: -webkit-sticky;
     position: sticky;

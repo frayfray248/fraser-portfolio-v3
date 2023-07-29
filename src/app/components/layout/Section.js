@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const StyledSection = styled.section`
     margin: 5rem 0rem;
+    min-height: 400px;
 `
 
 const StyledSectionTitle = styled.h1`

@@ -2,6 +2,7 @@ import Section from "../layout/Section"
 
 import ExperienceItem from "../layout/ExperienceItem"
 import Link from "../Link"
+import ButtonContainer from "../button/ButtonContainer"
 
 
 const Projects = () => {
@@ -54,9 +55,10 @@ const Projects = () => {
                     "Sponsored by Victoria-based companies Three Trees Technical and Oculus Design",
                 ]}
             />
-            <div>
+            <ButtonContainer>
                 <Link href='/resume.pdf' text="See Full Résumé" />
-            </div>
+                <Link href='https://www.superprof.ca/post-secondary-technologies-lab-assistant-with-year-diploma-information-technology-tutor-students-with-lab-and-course-work.html' text="Superprof Profile" />
+            </ButtonContainer>
         </Section>
     )
 }
