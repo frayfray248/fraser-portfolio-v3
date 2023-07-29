@@ -49,10 +49,29 @@ const StyledHeader = styled.div`
 
 const StyledHeaderTitle = styled.h1`
     font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     @media ${device.max.tablet} {
         font-size: 3rem;
     }
+`
+
+const StyledSocialMediaLinks = styled(SocialMediaLinks)`
+    
+    margin-left: 2rem;
+
+    @media ${singleColumnMaxWidth} {
+
+        margin-left: 0;
+    }
+
+    @media ${singleColumnMaxHeight} {
+
+        margin-left: 0;
+
+    }
+
 `
 
 const Header = ({ themeButtonHandler, activeSection }) => {
@@ -68,11 +87,11 @@ const Header = ({ themeButtonHandler, activeSection }) => {
 
                 <StyledHeaderTitle>FRASER MACALLUM</StyledHeaderTitle>
                 <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
-                <ProfilePicture img='images/labroom.png' radius={10} />
-                <Nav activeSection={activeSection} />
+                
             </div>
+            <Nav activeSection={activeSection} />
 
-            <SocialMediaLinks />
+            <StyledSocialMediaLinks />
 
         </StyledHeader>
     )

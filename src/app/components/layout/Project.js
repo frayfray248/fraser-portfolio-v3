@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+// device
+import { device } from '@/app/device/device'
+
 // config
 import { singleColumnMaxWidth } from '@/app/config/config'
 
@@ -13,6 +16,10 @@ const StyledProjectContainer = styled.div`
 
     font-weight: 500;
     font-size: 1rem;
+
+    @media ${device.max.tablet} {
+        flex-direction: column-reverse;
+    }
     
 
     &:hover {
@@ -36,6 +43,10 @@ const StyledProjectInfo = styled.div`
     flex: 1;
     margin-left: 1rem;
     color: ${props => props.theme.colors.defaultText};
+
+    @media ${device.max.tablet} {
+        margin-left: 0;
+    }
 
     h3 {
         font-size: 1.5rem;

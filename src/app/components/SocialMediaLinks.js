@@ -8,11 +8,11 @@ import ButtonContainer from "./button/ButtonContainer"
 import { LinkedInIcon, GitHubIcon, EnvelopeAtIcon } from './icons/Icon'
 
 const StyledButtonContainer = styled(ButtonContainer)`
-    margin-top: 4rem;
+    margin-top: 1rem;
 `
 
-const SocialMediaLinks = () => (
-    <StyledButtonContainer>
+const SocialMediaLinks = ({ className }) => (
+    <StyledButtonContainer className={className}>
         <a href="https://www.linkedin.com/in/fraser-macallum-752b2716b" target="_blank" rel="noreferrer" ><LinkedInIcon /></a>
         <a href="https://github.com/frayfray248" target="_blank" rel="noreferrer"><GitHubIcon /></a>
         <a href="mailto:fmacallum@shaw.ca"><EnvelopeAtIcon /></a>
