@@ -24,8 +24,12 @@ transition: all .2s ease-out;
 }
 `
 
+const StyledContainer = styled.div`
+    padding: 40px 0px;
+`
+
 const ProfilePicture = ({ href, text }) => (
-    <StyledLink href={href} >{text}</StyledLink>
+    <StyledContainer><StyledLink href={href} >{text}</StyledLink></StyledContainer>
 )
 
 export default ProfilePicture

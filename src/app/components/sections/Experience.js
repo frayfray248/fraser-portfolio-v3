@@ -1,6 +1,7 @@
 import Section from "../layout/Section"
 
 import ExperienceItem from "../layout/ExperienceItem"
+import Link from "../Link"
 
 
 const Projects = () => {
@@ -53,6 +54,9 @@ const Projects = () => {
                     "Sponsored by Victoria-based companies Three Trees Technical and Oculus Design",
                 ]}
             />
+            <div>
+                <Link href='/resume.pdf' text="See Full Résumé" />
+            </div>
         </Section>
     )
 }

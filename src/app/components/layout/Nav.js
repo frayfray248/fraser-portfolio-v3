@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { singleColumnMaxWidth, singleColumnMaxHeight } from '@/app/config/config'
 
 const StyledNavList = styled.ul`
-    margin-top: 2rem;
     margin-left: 2rem;
     list-style-type: none;
     padding: 0;

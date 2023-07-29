@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledSection = styled.section`
-    margin-bottom: 10rem;
+    margin: 5rem 0rem;
 `
 
 const StyledSectionTitle = styled.h1`

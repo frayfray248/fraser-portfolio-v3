@@ -13,7 +13,7 @@ const Contact = () => {
     return (
         <Section title="Contact" sectionId='contact'>
             <p>Thank you for reading my Portfolio. Please reach out to me if you have any questions</p>
-            <StyledContainer><Link href="mailto:fmacallum@shaw.ca" text="Reach Out" /></StyledContainer>
+            <Link href="mailto:fmacallum@shaw.ca" text="Reach Out" />
         </Section>
     )
 }
