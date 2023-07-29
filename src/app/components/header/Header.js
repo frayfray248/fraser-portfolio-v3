@@ -11,6 +11,7 @@ import Button from '../button/Button'
 import Nav from '../layout/Nav'
 import SocialMediaLinks from '../SocialMediaLinks'
 import ProfilePicture from '../ProfilePicture'
+import { Select, Option} from '../DropDown'
 
 // config
 import { singleColumnMaxWidth, singleColumnMaxHeight } from '@/app/config/config'
@@ -75,18 +76,27 @@ const StyledSocialMediaLinks = styled(SocialMediaLinks)`
 `
 
 const Header = ({ themeButtonHandler, activeSection }) => {
+
+    const themes = [mainTheme, secTheme, tertTheme]
+
+    const selectHandler = (e) => {
+        themeButtonHandler(themes[e.target.selectedIndex])
+    }
+
     return (
         <StyledHeader>
             <div>
-                <ButtonContainer>
-                    <Button handler={() => themeButtonHandler(mainTheme)} text="Theme 1" />
-                    <Button handler={() => themeButtonHandler(secTheme)} text="Theme 2" />
-                    <Button handler={() => themeButtonHandler(tertTheme)} text="Theme 3" />
-                </ButtonContainer>
+                <Select changeHandler={selectHandler}>
+                    {themes.map((theme, index) => {
+                        return (
+                            <Option key={index}>Theme {index + 1}</Option>
+                        )})}
+                </Select>
 
 
                 <StyledHeaderTitle>FRASER MACALLUM</StyledHeaderTitle>
-                <p>I'm a lab technologist and my goal is to become a Full Stack Developer.</p>
+                <p>I'm a lab technologist, tutor, and web developer.</p>
+                <p>I like to solve technological puzzles and show off my solutions.</p>
                 
             </div>
             <Nav activeSection={activeSection} />

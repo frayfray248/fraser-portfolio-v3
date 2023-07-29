@@ -29,7 +29,7 @@ const StyledContainer = styled.div`
 `
 
 const ProfilePicture = ({ href, text }) => (
-    <StyledContainer><StyledLink href={href} >{text}</StyledLink></StyledContainer>
+    <StyledContainer><StyledLink href={href}  target="_blank">{text}</StyledLink></StyledContainer>
 )
 
 export default ProfilePicture

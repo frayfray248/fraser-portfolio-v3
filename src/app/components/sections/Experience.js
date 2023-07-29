@@ -56,8 +56,8 @@ const Projects = () => {
                 ]}
             />
             <ButtonContainer>
-                <Link href='/resume.pdf' text="See Full Résumé" />
-                <Link href='https://www.superprof.ca/post-secondary-technologies-lab-assistant-with-year-diploma-information-technology-tutor-students-with-lab-and-course-work.html' text="Superprof Profile" />
+                <Link href='/resume.pdf' text="See Full Résumé"/>
+                <Link href='https://www.superprof.ca/post-secondary-technologies-lab-assistant-with-year-diploma-information-technology-tutor-students-with-lab-and-course-work.html' text="Superprof Profile"/>
             </ButtonContainer>
         </Section>
     )
