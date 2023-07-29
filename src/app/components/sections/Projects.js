@@ -24,6 +24,13 @@ const Projects = () => {
             link='https://github.com/frayfray248/chat-rooms'
             />
             <Project 
+            title="This Portfolio" 
+            img='/favicon.png'
+            desc='This portfolio website! Made with React and styled-components'
+            tags={['Next JS', 'React', 'styled-components', 'JavaScript', 'HTML', 'CSS']}
+            link='https://github.com/frayfray248/fraser-portfolio-v3'
+            />
+            <Project 
             title="Three Trees Calendar" 
             img='images/threetreescalendar.png'
             desc='A class/workshop manager WordPress plugin'
