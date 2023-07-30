@@ -5,12 +5,8 @@ import styled from 'styled-components'
 import { device } from '@/app/device/device'
 
 // components
-import Brand from '../icons/Brand'
-import ButtonContainer from '../button/ButtonContainer'
-import Button from '../button/Button'
 import Nav from '../layout/Nav'
 import SocialMediaLinks from '../SocialMediaLinks'
-import ProfilePicture from '../ProfilePicture'
 import { Select, Option} from '../DropDown'
 
 // config

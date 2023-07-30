@@ -14,10 +14,9 @@ const Projects = () => {
                 employer={"Camosun College"}
                 startDate={new Date(2023, 4)}
                 duties={[
-                    "Maintains, repairs, and calibrates electronic equipment, diagnosing faults and malfunctions",
-                    "Modifies and maintains computer hardware, software, and related network services",
-                    "Analyzes, designs, documents, develops, and tests computer software and hardware for courses and departmental operations",
-                    "Tests apparatus using debugging tools, constructs lab apparatus, and maintains printed circuit board manufacturing equipment"
+                    "Modified and maintained computer hardware, software, and related network services in computer laboratories.",
+                    "Analyzed, designed, documented, developed, and tested computer software and hardware for courses and departmental operations.",
+                    "Tested apparatus using debugging tools, and constructed lab apparatus."
                 ]}
             />
             <ExperienceItem
@@ -26,10 +25,10 @@ const Projects = () => {
                 startDate={new Date(2021, 3)}
                 endDate={new Date(2023, 3)}
                 duties={[
-                    "Help students with basic questions and demonstrate the use of specialized software and equipment/tools",
-                    "Assist students in troubleshooting programming complexities and other discipline-specific lab tasks",
-                    "Set up computer labs by preparing equipment and software",
-                    "Research and implement new technologies for use in lab environments",
+                    "Provided comprehensive support to students, including addressing basic inquiries, demonstrating the use of specialized software and equipment/tools, and assisting in troubleshooting programming complexities and other discipline-specific lab tasks.",
+                    "Set up computer labs by preparing equipment and software.",
+                    "Researched and implemented new technologies for use in lab environments.",
+                    "Maintained a Docker Swarm platform that hosted several department services."
                 ]}
             />
             <ExperienceItem
