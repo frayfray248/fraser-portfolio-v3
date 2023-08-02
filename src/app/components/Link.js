@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
 const StyledLink = styled.a`
-background : none;
+padding: 20px;
+white-space: nowrap;
 border: 2px solid ${props => props.theme.colors.link};
 border-radius: 5px;
+background : none;
 color: ${props => props.theme.colors.link};
-padding: 20px;
 text-decoration: none;
 transition: all .2s ease-out;
 
@@ -25,7 +26,7 @@ transition: all .2s ease-out;
 `
 
 const StyledContainer = styled.div`
-    padding: 40px 0px;
+    padding: 20px 0px;
 `
 
 const ProfilePicture = ({ href, text }) => (
