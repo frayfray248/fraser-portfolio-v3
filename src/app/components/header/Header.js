@@ -71,6 +71,10 @@ const StyledSocialMediaLinks = styled(SocialMediaLinks)`
 
 `
 
+const StyledTitle = styled.p`
+    color: ${props => props.theme.colors.link};
+`
+
 const Header = ({ themeButtonHandler, activeSection }) => {
 
     const themes = [mainTheme, secTheme, tertTheme]
@@ -91,8 +95,8 @@ const Header = ({ themeButtonHandler, activeSection }) => {
 
 
                 <StyledHeaderTitle>FRASER MACALLUM</StyledHeaderTitle>
-                <p>I'm a lab technologist, tutor, and web developer.</p>
-                <p>I like to solve technological puzzles and show off my solutions.</p>
+                <StyledTitle>Lab technologist, programming tutor, and web developer.</StyledTitle>
+                <p>I enjoy solving intricate technological challenges and sharing my inventive solutions.</p>
                 
             </div>
             <Nav activeSection={activeSection} />
