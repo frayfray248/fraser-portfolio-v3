@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledUl = styled.ul`
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(2, minmax(140px, 300px));
     list-style: none;
     padding-inline-start: 0;
 `
