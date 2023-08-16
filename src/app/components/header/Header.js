@@ -7,7 +7,7 @@ import { device } from '@/app/device/device'
 // components
 import Nav from '../layout/Nav'
 import SocialMediaLinks from '../SocialMediaLinks'
-import { Select, Option} from '../DropDown'
+import { Select, Option } from '../DropDown'
 
 // config
 import { singleColumnMaxWidth, singleColumnMaxHeight } from '@/app/config/config'
@@ -90,14 +90,19 @@ const Header = ({ themeButtonHandler, activeSection }) => {
                     {themes.map((theme, index) => {
                         return (
                             <Option key={index}>Theme {index + 1}</Option>
-                        )})}
+                        )
+                    })}
                 </Select>
+            </div>
+
+            <div>
+
 
 
                 <StyledHeaderTitle>FRASER MACALLUM</StyledHeaderTitle>
                 <StyledTitle>Lab technologist, programming tutor, and web developer.</StyledTitle>
-                <p>I enjoy solving intricate technological challenges and sharing my inventive solutions.</p>
-                
+                <p>I develop innovative and intricate full stack solutions for the web.</p>
+
             </div>
             <Nav activeSection={activeSection} />
 
