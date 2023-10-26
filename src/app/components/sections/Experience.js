@@ -10,6 +10,15 @@ const Projects = () => {
     return (
         <Section title="Experience" sectionId='experience'>
             <ExperienceItem
+                position={"Full Stack Developer"}
+                employer={"VCS INC."}
+                startDate={new Date(2023, 4)}
+                duties={[
+                    "Part-time freelance backend software and UI development for AI chat applications.",
+                    "Deployed applications on Fly.io."
+                ]}
+            />
+            <ExperienceItem
                 position={"Lab Technologist"}
                 employer={"Camosun College"}
                 startDate={new Date(2023, 4)}
@@ -26,36 +35,22 @@ const Projects = () => {
                 endDate={new Date(2023, 3)}
                 duties={[
                     "Provided comprehensive support to students, including addressing basic inquiries, demonstrating the use of specialized software and equipment/tools, and assisting in troubleshooting programming complexities and other discipline-specific lab tasks.",
-                    "Set up computer labs by preparing equipment and software.",
-                    "Researched and implemented new technologies for use in lab environments.",
                     "Maintained a Docker Swarm platform that hosted several department services."
                 ]}
             />
             <ExperienceItem
-                position={"Instructor, Part time"}
-                employer={"Camosun College"}
-                startDate={new Date(2022, 3)}
-                endDate={new Date(2022, 5)}
-                duties={[
-                    "Taught a 7-week computer literacy course (COMP152)",
-                    "Delivered weekly lectures and provided support during lab sessions",
-                    "Evaluated student submissions and provided feedback"
-                ]}
-            />
-            <ExperienceItem
                 position={"Developer, Capstone"}
-                employer={"Three Trees Technical"}
+                employer={"Three Trees Technical and Oculus Design"}
                 startDate={new Date(2020, 5)}
                 endDate={new Date(2020, 7)}
                 duties={[
-                    "Worked in an Agile team of three students to develop a WordPress calendar and course manager for non-profit organizations",
-                    "Created a fast and asynchronous Node JS Express REST API using ES6 and Sequelize JS ORM",
-                    "Wrote detailed technical documentation, including a project charter, team bios, user manual, and final report",
-                    "Sponsored by Victoria-based companies Three Trees Technical and Oculus Design",
+                    "Worked in a team to develop a WordPress calendar and course manager to aid non-profit organizations.",
+                    "Built a performant REST API using Node JS and Sequelize JS with 7 endpoints.",
+                    "Wrote detailed technical documentation",
                 ]}
             />
             <ButtonContainer>
-                <Link href='/resume.pdf' text="See Full Résumé"/>
+                <Link href='https://fmacal-portfolio-data.s3.amazonaws.com/resume.pdf' text="See Full Résumé"/>
                 <Link href='https://www.superprof.ca/post-secondary-technologies-lab-assistant-with-year-diploma-information-technology-tutor-students-with-lab-and-course-work.html' text="Superprof Profile"/>
             </ButtonContainer>
         </Section>

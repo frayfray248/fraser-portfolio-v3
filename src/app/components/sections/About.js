@@ -28,11 +28,13 @@ const About = ({ innerRef }) => {
                 My professional journey includes developing a full-stack <a href="http://capstone.camosun.ca/archived-capstone/June2020/public/TeamPages/Team%20Three%20Trees.php" target="_blank">WordPress app</a> for a Victoria tech company as part of my capstone project,
                 along with two years of valuable experience as a lab technician at <a href="https://camosun.ca/" target="_blank">Camosun College</a>.
                 In addition to my professional work, I have also dedicated time to <a href="#projects">personal projects</a>, honing my web
-                development skills further. I've also been a <a href="https://www.superprof.ca/post-secondary-technologies-lab-assistant-with-year-diploma-information-technology-tutor-students-with-lab-and-course-work.html" target="_blank">tutor</a>,
-                an <a href="#experience">instructor</a>, and a <a href="http://capstone.camosun.ca/cosc/2023" target="_blank">capstone sponsor</a>.
+                development skills further. I've also been a <a href="https://www.superprof.ca/post-secondary-technologies-lab-assistant-with-year-diploma-information-technology-tutor-students-with-lab-and-course-work.html" target="_blank">tutor</a> and a <a href="http://capstone.camosun.ca/cosc/2023" target="_blank">capstone sponsor</a>.
             </p>
             <p>
-                My diverse experiences in web development, systems administration, and teaching has equipped me with a versatile skill set to tackle a wide range of challenges.
+                I'm currently looking to obtain a full-stack or backend position for a business or startup where I can build dynamic web applications and improve my skills with professional development.
+            </p>
+            <p>
+                My diverse experiences in web development, systems administration, and tutoring has equipped me with a versatile skill set to tackle a wide range of challenges.
             </p>
             <p>
                 Here's a list of some of the technologies I've worked with:
